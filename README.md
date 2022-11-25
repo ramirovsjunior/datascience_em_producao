@@ -39,6 +39,8 @@ The strategy adopted was the following:
 
 ## 5. Data insights
 
+![Mind Map](https://github.com/ramirovsjunior/datascience_em_producao/blob/main/img/mindmaphipotesis.png)
+
 ### 5.1. Store Hypotheses
 
 1. Stores with more employees should sell more.

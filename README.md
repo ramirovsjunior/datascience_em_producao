@@ -37,8 +37,47 @@ The strategy adopted was the following:
 
 <b> Step 09 - Deploy Model to Production:</b> The model is deployed on a cloud environment to make possible that other stakeholders and services access its results.
 
-## 5. Top 3 Data insights
+## 5. Data insights
 
-1. Stores with larger assortment do not sell more.
-2. Stores with closer competitors do sell more.
-3. Stores sell less at school holidays (except during summer).
+### 5.1. Store Hypotheses
+
+1. Stores with more employees should sell more.
+2. Stores with greater inventory capacity should sell more.
+3. Larger stores should sell more.
+4. Stores with larger assortments should sell more.
+5. Stores with closer competitors should sell less.
+6. Stores with longer competitors should sell more.
+
+### 5.2. Product Hypotheses
+
+1. Stores that invest more in Marketing should sell more.
+2. Stores with more product exposure should sell more.
+3. Stores with lower priced products should sell more.
+4. Stores with more aggressive promotions (bigger discounts) should sell more.
+5. Stores with longer running promotions should sell more.
+6. Stores with more promotion days should sell more.
+7. Stores with more consecutive promotions should sell more.
+
+### 5.3. Time Hypotheses
+
+1. Stores open during the Christmas holiday should sell more.
+2. Stores should sell more over the years.
+3. Stores should sell more in the second half of the year.
+4. Stores should sell more after the 10th of each month.
+5. Stores should sell less on weekends.
+6. Stores should sell less during school holidays.
+
+### 5.4. Final List of Hypotheses
+
+1. Stores with larger assortments should sell more.
+2. Stores with closer competitors should sell less.
+3. Stores with longer competitors should sell more.
+4. Stores with longer active promotions should sell more.
+5. Stores with more promotion days should sell more.
+6. Stores with more consecutive promotions should sell more.
+7. Stores open during the Christmas holiday should sell more.
+8. Stores should sell more over the years.
+9. Stores should sell more in the second half of the year.
+10. Stores should sell more after the 10th of each month.
+11. Stores should sell less on weekends.
+12. Stores should sell less during school holidays.

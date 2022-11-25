@@ -83,3 +83,8 @@ The strategy adopted was the following:
 10. Stores should sell more after the 10th of each month.
 11. Stores should sell less on weekends.
 12. Stores should sell less during school holidays.
+
+### References
+
+* Blog [Comunidade Data Science](https://comunidadeds.com/)
+* Dataset Rossmann Store Sales from [Kaggle](https://www.kaggle.com/c/rossmann-store-sales)

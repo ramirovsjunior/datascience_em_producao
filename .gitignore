@@ -1,5 +1,5 @@
 # Extensions
-*.csv
+#*.csv
 
 # Outros
 .DS_Store

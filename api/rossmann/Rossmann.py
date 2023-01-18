@@ -7,7 +7,7 @@ import datetime
 
 class Rossmann(object):
     def __init__(self):
-        self.home_path = '/Users/ramirovsjunior/Documents/repos/datascience_em_producao'
+        self.home_path = '/Users/ramirovsjunior/Documents/repos/datascience_em_producao/'
         self.competition_distance_scaler = pickle.load(
             open(self.home_path + 'parameter/competition_distance_scaler.pkl', 'rb'))
         self.competition_time_month_scaler = pickle.load(
@@ -66,8 +66,7 @@ class Rossmann(object):
         df1['month_map'] = df1['date'].dt.month.map(month_map)
 
         df1['is_promo'] = df1[['promo_interval', 'month_map']].apply(
-            lambda x: 0 if x['promo_interval'] == 0 else 1 if x['month_map'] in x['promo_interval'].split(',') else 
-0, axis=1)
+            lambda x: 0 if x['promo_interval'] == 0 else 1 if x['month_map'] in x['promo_interval'].split(',') else 0, axis=1)
 
         # 1.6. Change Data Types
         # competiton
@@ -119,8 +118,7 @@ class Rossmann(object):
 
         # state holiday
         df2['state_holiday'] = df2['state_holiday'].apply(
-            lambda x: 'public_holiday' if x == 'a' else 'easter_holiday' if x == 'b' else 'christmas' if x == 'c' 
-else 'regular_day')
+            lambda x: 'public_holiday' if x == 'a' else 'easter_holiday' if x == 'b' else 'christmas' if x == 'c' else 'regular_day')
 
         # 3.0. PASSO 03 - FILTRAGEM DE VARIÁVEIS
         # 3.1. Filtragem das Linhas
@@ -188,12 +186,9 @@ else 'regular_day')
         df5['week_of_year_cos'] = df5['week_of_year'].apply(
             lambda x: np.cos(x * (2. * np.pi/52)))
 
-        cols_selected = ['store', 'promo', 'store_type', 'assortment', 'competition_distance', 
-'competition_open_since_month',
-                         'competition_open_since_year', 'promo2', 'promo2_since_week', 'promo2_since_year', 
-'competition_time_month', 'promo_time_week',
-                         'day_of_week_sin', 'day_of_week_cos', 'month_sin', 'month_cos', 'day_sin', 'day_cos', 
-'week_of_year_sin', 'week_of_year_cos']
+        cols_selected = ['store', 'promo', 'store_type', 'assortment', 'competition_distance', 'competition_open_since_month',
+                         'competition_open_since_year', 'promo2', 'promo2_since_week', 'promo2_since_year', 'competition_time_month', 'promo_time_week',
+                         'day_of_week_sin', 'day_of_week_cos', 'month_sin', 'month_cos', 'day_sin', 'day_cos', 'week_of_year_sin', 'week_of_year_cos']
 
         return df5[cols_selected]
 

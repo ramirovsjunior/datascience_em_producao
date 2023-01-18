@@ -1,4 +1,5 @@
 import pickle
+from urllib import response
 import pandas as pd
 
 from flask import Flask, request, Response
@@ -41,8 +42,8 @@ def rossmann_predict():
         return df_response
 
     else:
-        return Reponse('{}', status=200, mimetype='application/json')
+        return response('{}', status=200, mimetype='application/json')
 
 
 if __name__ == '__main__':
-    app.run('0.0.0.0')
+    app.run('0.0.0.0', port=80)
